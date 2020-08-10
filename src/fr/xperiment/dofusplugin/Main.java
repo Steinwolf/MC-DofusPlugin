@@ -10,6 +10,7 @@ public class Main extends JavaPlugin{
 	public void onEnable() {
 		System.out.println("[Dofus Plugin] Started");
 		getCommand("class").setExecutor(new CommandsExecutor());
+		getCommand("rmclass").setExecutor(new CommandsExecutor());
 		getServer().getPluginManager().registerEvents(new DofusListener(), this);
 	}
 	

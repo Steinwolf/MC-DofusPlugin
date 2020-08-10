@@ -2,7 +2,10 @@ name: DofusPlugin
 version: 1.0
 author: Xperiment
 main: fr.xperiment.dofusplugin.Main
+api-version: 1.16
 commands:
   class:
     description: Shows in a GUI all the available classes to a player
+  rmclass:
+    description: Remove the current class of a player
     
