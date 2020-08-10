@@ -1,7 +1,5 @@
 package fr.xperiment.dofusplugin;
 
-import java.util.Arrays;
-
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -9,7 +7,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 
-import fr.xperiment.dofusplugin.constructors.CustomItems;
+import fr.xperiment.dofusplugin.constructors.CustomClasses;
 
 public class DofusListener implements Listener{
 	
@@ -20,7 +18,7 @@ public class DofusListener implements Listener{
 		
 		if (itemClicked == null) return;
 		
-		if (itemClicked.equals(CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")))) {
+		if (itemClicked.getType()==Material.PAPER && itemClicked.getItemMeta().getDisplayName().equalsIgnoreCase("§2Certificat de Classe")) {
 			event.setCancelled(true);
 			return;
 		}
@@ -29,44 +27,28 @@ public class DofusListener implements Listener{
 			event.setCancelled(true);
 			switch (itemClicked.getType()) {
 				case ARROW:
-					player.sendMessage("Vous avez choisi la classe §2Cra§r!");
-					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					player.closeInventory();
+					CustomClasses.setClass(player, Class.CRA);
 					break;
 				case CHAIN:
-					player.sendMessage("Vous avez choisi la classe §2Sacrieur§r!");
-					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					player.closeInventory();
+					CustomClasses.setClass(player, Class.SACRIEUR);
 					break;
 				case IRON_SWORD:
-					player.sendMessage("Vous avez choisi la classe §2Iop§r!");
-					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					player.closeInventory();
+					CustomClasses.setClass(player, Class.IOP);
 					break;
 				case TNT:
-					player.sendMessage("Vous avez choisi la classe §2Roublard§r!");
-					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					player.closeInventory();
+					CustomClasses.setClass(player, Class.ROUBLARD);
 					break;
 				case SPAWNER:
-					player.sendMessage("Vous avez choisi la classe §2Osamodas§r!");
-					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					player.closeInventory();
+					CustomClasses.setClass(player, Class.OSAMODAS);
 					break;
 				case POTION:
-					player.sendMessage("Vous avez choisi la classe §2Eniripsa§r!");
-					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					player.closeInventory();
+					CustomClasses.setClass(player, Class.ENIRIPSA);
 					break;
 				case WITHER_SKELETON_SKULL:
-					player.sendMessage("Vous avez choisi la classe §2Sram§r!");
-					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					player.closeInventory();
+					CustomClasses.setClass(player, Class.SRAM);
 					break;
 				case CLOCK:
-					player.sendMessage("Vous avez choisi la classe §2Xelor§r!");
-					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					player.closeInventory();
+					CustomClasses.setClass(player, Class.XELOR);
 					break;					
 				case BARRIER:
 					player.sendMessage("Comming Soon, be patient !");
