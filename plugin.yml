@@ -1,0 +1,8 @@
+name: DofusPlugin
+version: 1.0
+author: Xperiment
+main: fr.xperiment.dofusplugin.Main
+commands:
+  class:
+    description: Shows in a GUI all the available classes to a player
+    
