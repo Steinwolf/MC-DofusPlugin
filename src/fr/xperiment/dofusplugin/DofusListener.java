@@ -29,49 +29,48 @@ public class DofusListener implements Listener{
 			event.setCancelled(true);
 			switch (itemClicked.getType()) {
 				case ARROW:
-					player.sendMessage("Vous souhaitez devenir un §2Cra§r, seulement la classe n'existe pas encore...");
-					player.getInventory().setItem(11,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					//player.closeInventory();
+					player.sendMessage("Vous avez choisi la classe §2Cra§r!");
+					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
+					player.closeInventory();
 					break;
 				case CHAIN:
-					player.sendMessage("Vous souhaitez devenir un §2Sacrieur§r, seulement la classe n'existe pas encore...");
-					player.getInventory().addItem(CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					//player.closeInventory();
+					player.sendMessage("Vous avez choisi la classe §2Sacrieur§r!");
+					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
+					player.closeInventory();
 					break;
 				case IRON_SWORD:
-					player.sendMessage("Vous souhaitez devenir un §2Iop§r, seulement la classe n'existe pas encore...");
-					player.getInventory().addItem(CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					//player.closeInventory();
+					player.sendMessage("Vous avez choisi la classe §2Iop§r!");
+					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
+					player.closeInventory();
 					break;
 				case TNT:
-					player.sendMessage("Vous souhaitez devenir un §2Roublard§r, seulement la classe n'existe pas encore...");
-					player.getInventory().addItem(CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					//player.closeInventory();
+					player.sendMessage("Vous avez choisi la classe §2Roublard§r!");
+					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
+					player.closeInventory();
 					break;
 				case SPAWNER:
-					player.sendMessage("Vous souhaitez devenir un §2Osamodas§r, seulement la classe n'existe pas encore...");
-					player.getInventory().addItem(CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					//player.closeInventory();
+					player.sendMessage("Vous avez choisi la classe §2Osamodas§r!");
+					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
+					player.closeInventory();
 					break;
 				case POTION:
-					player.sendMessage("Vous souhaitez devenir un §2Eniripsa§r, seulement la classe n'existe pas encore...");
-					player.getInventory().addItem(CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					//player.closeInventory();
+					player.sendMessage("Vous avez choisi la classe §2Eniripsa§r!");
+					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
+					player.closeInventory();
 					break;
 				case WITHER_SKELETON_SKULL:
-					player.sendMessage("Vous souhaitez devenir un §2Sram§r, seulement la classe n'existe pas encore...");
-					player.getInventory().addItem(CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					//player.closeInventory();
+					player.sendMessage("Vous avez choisi la classe §2Sram§r!");
+					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
+					player.closeInventory();
 					break;
 				case CLOCK:
-					player.sendMessage("Vous souhaitez devenir un §2Xelor§r, seulement la classe n'existe pas encore...");
-					player.getInventory().addItem(CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					//player.closeInventory();
+					player.sendMessage("Vous avez choisi la classe §2Xelor§r!");
+					player.getInventory().setItem(9,CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
+					player.closeInventory();
 					break;					
 				case BARRIER:
-					player.sendMessage("Comming Soon, sois patient !");
-					player.getInventory().addItem(CustomItems.getItem(Material.PAPER,"§2Certificat de Classe",Arrays.asList("§6[Dofus]")));
-					//player.closeInventory();
+					player.sendMessage("Comming Soon, be patient !");
+					player.closeInventory();
 					break;
 				default:
 					break;
